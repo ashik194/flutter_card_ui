@@ -1,0 +1,41 @@
+Scaffold(
+      backgroundColor: Colors.white,
+      body: Column(
+        children: [
+          Container(
+            height: 250,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.only(
+                bottomRight: Radius.circular(30),
+              ),
+              color: Color(0xFF363f93),
+            ),
+            child: Stack(
+              children: [
+                Positioned(
+                    top: 80,
+                    left: 0,
+                    child: Container(
+                      height: 100,
+                      width: 300,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(50),
+                          bottomRight: Radius.circular(50
+                          ),
+                        ),
+                      ),
+                    )
+                ),
+                Positioned(
+                  top: 110,
+                    left: 20,
+                    child: Text("Your Title", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Color(0xFF363f93)),),
+                ),
+              ],
+            ),
+          )
+        ],
+      ),
+    )
